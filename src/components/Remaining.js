@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
-const Remaining = () => {
+const RemainingBudget = () => {
   const {expenses, budget } = useContext(AppContext);
   const totalExpenses = expenses.reduce((total, item) => {
     return (total = total + item.cost);
@@ -12,4 +12,4 @@ return (
   </div>
   );
 };
-export default Remaining;
+export default RemainingBudget;
